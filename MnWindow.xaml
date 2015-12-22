@@ -3,6 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MnWindow" Height="339" Width="386">
     <Grid>
+        <Menu Height="20" VerticalAlignment="Top">
+            
+        </Menu>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Hello you!" VerticalAlignment="Top" Height="30" Width="160" Margin="0,43,0,0" FontSize="20" TextAlignment="Center"/>
 
     </Grid>
 </Window>

@@ -55,10 +55,10 @@ namespace AdoExam
                         if (pss == 1)
                         {
                             App.admin = true;
-                            MnWindow mw = new MnWindow();
-                            mw.Show();
-                            this.Close();
                         }
+                        MnWindow mw = new MnWindow();
+                        mw.Show();
+                        this.Close();
                     }
                     else
                     {
