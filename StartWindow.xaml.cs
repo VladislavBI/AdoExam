@@ -52,13 +52,22 @@ namespace AdoExam
                         cmd.Parameters.AddWithValue("EmpName", tbName.Text);
                         int pss = (int)cmd.ExecuteScalar();
 
+                        App.userName = tbName.Text;
+
                         if (pss == 1)
                         {
                             App.admin = true;
+                            MnWindow mw = new MnWindow();
+                            mw.Show();
+                            this.Close();
                         }
-                        MnWindow mw = new MnWindow();
-                        mw.Show();
-                        this.Close();
+                        else
+                        {
+                            SlWindow sl = new SlWindow();
+                            sl.Show();
+                            this.Close();      
+                        }
+                        
                     }
                     else
                     {

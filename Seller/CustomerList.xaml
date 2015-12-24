@@ -1,0 +1,21 @@
+﻿<Window x:Class="AdoExam.Seller.CustomerList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CustomerList" Height="370" Width="601">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DataGrid Name="dgCust"/>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Left" Height="178" Margin="5,83,0,0" VerticalAlignment="Top" Width="188">
+            <TextBlock TextWrapping="Wrap" Text="Поиск имени" Margin="0,0,0,10" TextAlignment="Center"/>
+            <TextBox Height="23" TextWrapping="Wrap" Text="" Margin="0,0,0,10" x:Name="tbSearchName"/>
+            <TextBlock TextWrapping="Wrap" Text="Поиск города" Margin="0,0,0,10" TextAlignment="Center"/>
+            <TextBox Height="23" TextWrapping="Wrap" Text="" Margin="0,0,0,10" x:Name="tbSearchCity"/>
+            <Button Content="Поиск" Margin="0,0,0,10"/>
+            <Button Content="Сброс"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

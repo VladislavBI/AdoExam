@@ -15,5 +15,6 @@ namespace AdoExam
     {
         public static bool admin=false;
         public static string conStr = @"Data Source=localhost; Initial Catalog=AdoExam; Integrated Security=true; Pooling=true";
+        public static string userName;
     }
 }
